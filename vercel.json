@@ -19,12 +19,8 @@
       "dest": "cognitriage-backend/app/main.py"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "dest": "cognitriage-frontend/dist/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "cognitriage-frontend/dist/index.html"
+      "dest": "cognitriage-frontend/$1"
     }
   ]
 }
