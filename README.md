@@ -11,7 +11,7 @@
 
 ---
 
-## Problem Statement
+## Problem statement
 
 Healthcare systems worldwide face a critical bottleneck: **neuroimaging analysis for cognitive decline screening**. Radiologists are overwhelmed with scan volumes, diagnostic delays can span weeks, and early-stage cognitive decline often goes undetected until irreversible damage occurs.
 
@@ -25,29 +25,29 @@ Current challenges:
 
 ---
 
-## AI-Powered Analysis Pipeline
+## AI-Powered analysis pipeline
 
 CogniTriage implements a comprehensive **Upload → Process → Analyze → Visualize → Report** architecture:
 
-### 🧠 **Neuroimaging Processing Engine** (`cognitriage-backend/app/neuroimaging.py`)
+### **Neuroimaging processing engine** (`cognitriage-backend/app/neuroimaging.py`)
 - **Multi-Format Support**: Handles NIfTI (.nii.gz), DICOM, and compressed neuroimaging formats
 - **Automated Brain Extraction**: Skull-stripping and tissue segmentation using advanced algorithms
 - **Volume Quantification**: Precise hippocampal and cortical volume measurements
 - **Quality Assessment**: Automated scan quality metrics (SNR, motion artifacts, contrast)
 
-### 📊 **Volumetric Analysis** 
+### **Volumetric analysis** 
 - **Hippocampal Volume**: Critical for early Alzheimer's detection
 - **Cortical Thickness**: Gray matter analysis for cognitive assessment  
 - **Ventricular Size**: CSF volume changes indicating atrophy
 - **Age-Normalized Percentiles**: Population-based reference comparisons
 
-### 🎯 **Risk Stratification**
+### **Risk stratification**
 - **Multi-Modal Assessment**: Combines volumetric, intensity, and morphological features
 - **Cognitive Decline Probability**: ML-based risk scoring (0-100%)
 - **Clinical Recommendations**: Automated triage decisions (urgent/routine/follow-up)
 - **Uncertainty Quantification**: Confidence intervals for all measurements
 
-### 🔬 **Advanced Visualization**
+### **Advanced visualization**
 - **3D Brain Rendering**: Interactive axial, coronal, and sagittal views
 - **Heatmap Overlays**: Abnormality localization with color-coded intensity
 - **Comparative Analysis**: Side-by-side normal vs. patient comparisons
@@ -55,7 +55,7 @@ CogniTriage implements a comprehensive **Upload → Process → Analyze → Visu
 
 ---
 
-## Technical Architecture
+## Technical architecture
 
 ### **Full-Stack Implementation**
 - **Frontend**: React 18 + TypeScript + Vite for responsive clinical interface
@@ -63,7 +63,7 @@ CogniTriage implements a comprehensive **Upload → Process → Analyze → Visu
 - **UI Framework**: shadcn/ui + Tailwind CSS for professional medical interface
 - **Visualization**: Custom D3.js components for brain rendering
 
-### **Neuroimaging Stack**
+### **Neuroimaging stack**
 ```python
 # Core neuroimaging libraries
 nibabel==5.3.2          # NIfTI file handling
@@ -73,7 +73,7 @@ scipy==1.14.0           # Scientific computing
 numpy==2.3.2            # Numerical operations
 ```
 
-### **Processing Pipeline**
+### **Processing pipeline**
 ```python
 # Automated analysis workflow
 class NeuroimagingProcessor:
@@ -88,7 +88,7 @@ class NeuroimagingProcessor:
         # 8. Compute risk stratification
 ```
 
-### **Deployment Architecture**
+### **Deployment architecture**
 - **Vercel**: Production deployment with serverless functions
 - **FastAPI Backend**: Python-based neuroimaging processing
 - **React Frontend**: Modern SPA with client-side routing
@@ -98,24 +98,24 @@ class NeuroimagingProcessor:
 
 ## Key Features
 
-### **🚀 Instant Analysis**
+### **Instant Analysis**
 - Upload brain scan → Results in under 60 seconds
 - Real-time processing status with progress indicators
 - Automated quality control and error handling
 
-### **📈 Clinical Metrics**
+### **Clinical Metrics**
 - Hippocampal volume measurements (mm³)
 - Age-adjusted percentile rankings
 - Cognitive decline probability scores
 - Automated clinical recommendations
 
-### **🎨 Interactive Visualization**
+### **Interactive Visualization**
 - Multi-planar brain views (axial/coronal/sagittal)
 - Abnormality heatmaps with intensity scaling
 - Comparative analysis with normative data
 - Exportable reports for clinical documentation
 
-### **⚡ Performance Optimized**
+### **Performance Optimized**
 - Serverless architecture for scalability
 - Optimized image processing algorithms
 - Progressive loading for large datasets
@@ -147,7 +147,7 @@ uvicorn app.main:app --reload --port 8000
 
 ---
 
-## Project Structure
+## Project structure
 
 ```
 neuro_triage/
@@ -179,7 +179,7 @@ neuro_triage/
 
 ---
 
-## Sample Analysis Output
+## Sample analysis output
 
 ```json
 {
@@ -215,14 +215,14 @@ neuro_triage/
 
 ---
 
-## Clinical Impact
+## Clinical impact
 
 **CogniTriage addresses critical healthcare needs:**
 
-- ⚡ **Speed**: Instant analysis vs. weeks of waiting
-- 🎯 **Accuracy**: Consistent, quantitative measurements  
-- 📊 **Objectivity**: Eliminates inter-reader variability
-- 🏥 **Accessibility**: Democratizes expert-level neuroimaging analysis
-- 💰 **Cost-Effective**: Reduces need for specialized radiologist time
+- **Speed**: Instant analysis vs. weeks of waiting
+- **Accuracy**: Consistent, quantitative measurements  
+- **Objectivity**: Eliminates inter-reader variability
+- **Accessibility**: Democratizes expert-level neuroimaging analysis
+- **Cost-Effective**: Reduces need for specialized radiologist time
 
 **Perfect for**: Emergency departments, primary care screening, research studies, and resource-limited healthcare settings requiring rapid neuroimaging triage.
