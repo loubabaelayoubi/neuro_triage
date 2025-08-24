@@ -14,13 +14,15 @@ interface BrainVisualizationProps {
   volumes: any;
   qualityMetrics: any;
   heatmapData?: any;
+  abnormalityRegions?: any;
 }
 
 export default function BrainVisualization({ 
   slices, 
   volumes, 
   qualityMetrics, 
-  heatmapData 
+  heatmapData,
+  abnormalityRegions
 }: BrainVisualizationProps) {
   const [activeView, setActiveView] = useState<'axial' | 'coronal' | 'sagittal'>('axial');
   const [showHeatmap, setShowHeatmap] = useState(false);
@@ -30,7 +32,7 @@ export default function BrainVisualization({
     (slice) => typeof slice === 'string' && slice.trim().length > 0
   );
 
-  console.log('BrainVisualization props:', { slices, volumes, qualityMetrics, heatmapData });
+  console.log('BrainVisualization props:', { slices, volumes, qualityMetrics, heatmapData, abnormalityRegions });
   console.log('BrainVisualization - slices type:', typeof slices);
   console.log('BrainVisualization - slices value:', slices);
   console.log('Active view:', activeView);

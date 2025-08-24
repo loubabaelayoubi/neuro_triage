@@ -1,0 +1,43 @@
+# Development files
+.env.local
+.env.development.local
+.env.test.local
+
+# Node modules (will be installed by Vercel)
+node_modules/
+cognitriage-frontend/node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+cognitriage-frontend/dist/
+cognitriage-backend/build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test files
+tests/
+cognitriage-backend/tests/
+
+# Documentation
+README.md
+*.md
+
+# NII files (too large for deployment)
+nii files/
