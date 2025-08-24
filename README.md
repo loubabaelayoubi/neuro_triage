@@ -101,11 +101,9 @@ class NeuroimagingProcessor:
 ### **Instant Analysis**
 - Upload brain scan → Results in under 60 seconds
 - Real-time processing status with progress indicators
-- Automated quality control and error handling
 
 ### **Clinical Metrics**
-- Hippocampal volume measurements (mm³)
-- Age-adjusted percentile rankings
+- Hippocampal volume measurements
 - Cognitive decline probability scores
 - Automated clinical recommendations
 
@@ -114,13 +112,7 @@ class NeuroimagingProcessor:
 - Abnormality heatmaps with intensity scaling
 - Comparative analysis with normative data
 - Exportable reports for clinical documentation
-
-### **Performance Optimized**
-- Serverless architecture for scalability
-- Optimized image processing algorithms
-- Progressive loading for large datasets
-- Mobile-responsive design for clinical workflows
-
+  
 ---
 
 ## Quick Start
@@ -214,15 +206,3 @@ neuro_triage/
 ```
 
 ---
-
-## Clinical impact
-
-**CogniTriage addresses critical healthcare needs:**
-
-- **Speed**: Instant analysis vs. weeks of waiting
-- **Accuracy**: Consistent, quantitative measurements  
-- **Objectivity**: Eliminates inter-reader variability
-- **Accessibility**: Democratizes expert-level neuroimaging analysis
-- **Cost-Effective**: Reduces need for specialized radiologist time
-
-**Perfect for**: Emergency departments, primary care screening, research studies, and resource-limited healthcare settings requiring rapid neuroimaging triage.
