@@ -51,14 +51,12 @@ CogniTriage implements a comprehensive **Upload → Process → Analyze → Visu
 - **3D Brain Rendering**: Interactive axial, coronal, and sagittal views
 - **Heatmap Overlays**: Abnormality localization with color-coded intensity
 - **Comparative Analysis**: Side-by-side normal vs. patient comparisons
-- **Thumbnail Generation**: Automated key slice selection for reports
-
 ---
 
 ## Technical architecture
 
 ### **Full-Stack Implementation**
-- **Frontend**: React 18 + TypeScript + Vite for responsive clinical interface
+- **Frontend**: React 18 + TypeScript + Vite for responsive clinical interface 
 - **Backend**: FastAPI + Python for high-performance neuroimaging processing
 - **UI Framework**: shadcn/ui + Tailwind CSS for professional medical interface
 - **Visualization**: Custom D3.js components for brain rendering
